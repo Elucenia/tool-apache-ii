@@ -1,0 +1,497 @@
+{
+  "tool": {
+    "id": "apache-ii",
+    "title": "APACHE II",
+    "short": "Gravidade e mortalidade prevista na UTI",
+    "desc": "Calcule o APACHE II com os piores valores das primeiras 24 h de UTI: escore fisiológico, idade, doença crônica e mortalidade hospitalar prevista.",
+    "lead": "Estima a gravidade da doença e a mortalidade hospitalar de pacientes adultos admitidos na UTI, a partir de 12 variáveis fisiológicas, idade, doença crônica e categoria diagnóstica.",
+    "spec": [
+      "medicina-intensiva",
+      "medicina-de-emergencia",
+      "anestesiologia"
+    ],
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 16,
+          "max": 110,
+          "unit": "anos",
+          "ph": "60"
+        }
+      ],
+      [
+        "temp",
+        "Temperatura central",
+        "num",
+        {
+          "min": 25,
+          "max": 45,
+          "step": 0.1,
+          "unit": "°C",
+          "ph": "37"
+        }
+      ],
+      [
+        "pam",
+        "Pressão arterial média",
+        "num",
+        {
+          "min": 20,
+          "max": 250,
+          "unit": "mmHg",
+          "ph": "80"
+        }
+      ],
+      [
+        "fc",
+        "Frequência cardíaca",
+        "num",
+        {
+          "min": 20,
+          "max": 250,
+          "unit": "bpm",
+          "ph": "90"
+        }
+      ],
+      [
+        "fr",
+        "Frequência respiratória",
+        "num",
+        {
+          "min": 0,
+          "max": 80,
+          "unit": "irpm",
+          "ph": "18"
+        }
+      ],
+      [
+        "fio2",
+        "FiO₂",
+        "num",
+        {
+          "min": 21,
+          "max": 100,
+          "unit": "%",
+          "ph": "40"
+        }
+      ],
+      [
+        "pao2",
+        "PaO₂",
+        "num",
+        {
+          "min": 20,
+          "max": 700,
+          "unit": "mmHg",
+          "ph": "80"
+        }
+      ],
+      [
+        "paco2",
+        "PaCO₂ (necessária se FiO₂ ≥ 50%)",
+        "num",
+        {
+          "min": 10,
+          "max": 150,
+          "unit": "mmHg",
+          "ph": "40",
+          "opt": true
+        }
+      ],
+      [
+        "ph",
+        "pH arterial",
+        "num",
+        {
+          "min": 6.5,
+          "max": 8,
+          "step": 0.01,
+          "ph": "7,40"
+        }
+      ],
+      [
+        "na",
+        "Sódio",
+        "num",
+        {
+          "min": 90,
+          "max": 200,
+          "unit": "mEq/L",
+          "ph": "140"
+        }
+      ],
+      [
+        "k",
+        "Potássio",
+        "num",
+        {
+          "min": 1,
+          "max": 10,
+          "step": 0.1,
+          "unit": "mEq/L",
+          "ph": "4,0"
+        }
+      ],
+      [
+        "cr",
+        "Creatinina",
+        "num",
+        {
+          "min": 0.1,
+          "max": 20,
+          "step": 0.1,
+          "unit": "mg/dL",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "ira",
+        "Insuficiência renal aguda?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "ht",
+        "Hematócrito",
+        "num",
+        {
+          "min": 5,
+          "max": 75,
+          "step": 0.1,
+          "unit": "%",
+          "ph": "38"
+        }
+      ],
+      [
+        "leuco",
+        "Leucócitos",
+        "num",
+        {
+          "min": 0.1,
+          "max": 200,
+          "step": 0.1,
+          "unit": "×10³/µL",
+          "ph": "10"
+        }
+      ],
+      [
+        "gcs",
+        "Escala de Coma de Glasgow",
+        "num",
+        {
+          "min": 3,
+          "max": 15,
+          "ph": "15"
+        }
+      ],
+      [
+        "cronica",
+        "Insuficiência orgânica grave prévia ou imunossupressão (cirrose, NYHA IV, DPOC grave, diálise crônica, imunossupressão)",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "admissao",
+        "Tipo de admissão",
+        "radio",
+        {
+          "opts": {
+            "clin": "Clínica (não cirúrgica)",
+            "urg": "Pós-operatório de urgência",
+            "elet": "Pós-operatório eletivo"
+          }
+        }
+      ],
+      [
+        "diag",
+        "Categoria diagnóstica principal",
+        "sel",
+        {
+          "opts": {
+            "n_asma": "Clínico · Insuf. respiratória: asma ou alergia",
+            "n_dpoc": "Clínico · Insuf. respiratória: DPOC",
+            "n_edema": "Clínico · Insuf. respiratória: edema pulmonar não cardiogênico",
+            "n_pcr_resp": "Clínico · Insuf. respiratória: pós-parada respiratória",
+            "n_aspiracao": "Clínico · Insuf. respiratória: aspiração, intoxicação ou tóxico",
+            "n_tep": "Clínico · Insuf. respiratória: embolia pulmonar",
+            "n_infec_resp": "Clínico · Insuf. respiratória: infecção",
+            "n_neo_resp": "Clínico · Insuf. respiratória: neoplasia",
+            "n_has": "Clínico · Cardiovascular: hipertensão",
+            "n_ritmo": "Clínico · Cardiovascular: distúrbio do ritmo",
+            "n_icc": "Clínico · Cardiovascular: insuficiência cardíaca congestiva",
+            "n_hipovol": "Clínico · Cardiovascular: choque hemorrágico ou hipovolemia",
+            "n_dac": "Clínico · Cardiovascular: doença arterial coronariana",
+            "n_sepse": "Sepse (clínico ou pós-operatório)",
+            "n_pcr": "Pós-parada cardíaca (clínico ou pós-operatório)",
+            "n_cardiog": "Clínico · Cardiovascular: choque cardiogênico",
+            "n_aneur": "Clínico · Cardiovascular: dissecção ou aneurisma de aorta",
+            "n_politrauma": "Clínico · Trauma: politrauma",
+            "n_tce": "Clínico · Trauma: trauma cranioencefálico",
+            "n_convulsao": "Clínico · Neurológico: crise convulsiva",
+            "n_hic": "Clínico · Neurológico: hemorragia intracraniana, HSA ou hematoma subdural",
+            "n_intox": "Clínico · Overdose de drogas",
+            "n_cad": "Clínico · Cetoacidose diabética",
+            "n_hda": "Clínico · Hemorragia digestiva",
+            "n_outro_metab": "Clínico · Outro: metabólico ou renal",
+            "n_outro_resp": "Clínico · Outro: respiratório",
+            "n_outro_neuro": "Clínico · Outro: neurológico",
+            "n_outro_cv": "Clínico · Outro: cardiovascular",
+            "n_outro_gi": "Clínico · Outro: gastrointestinal",
+            "p_politrauma": "Pós-operatório · Politrauma",
+            "p_cv_cronica": "Pós-operatório · Doença cardiovascular crônica",
+            "p_vascular": "Pós-operatório · Cirurgia vascular periférica",
+            "p_valva": "Pós-operatório · Cirurgia valvar",
+            "p_cranio_neo": "Pós-operatório · Craniotomia por neoplasia",
+            "p_renal_neo": "Pós-operatório · Cirurgia renal por neoplasia",
+            "p_tx_renal": "Pós-operatório · Transplante renal",
+            "p_tce": "Pós-operatório · Trauma cranioencefálico",
+            "p_torax_neo": "Pós-operatório · Cirurgia torácica por neoplasia",
+            "p_cranio_hic": "Pós-operatório · Craniotomia por hemorragia intracraniana, HSA ou subdural",
+            "p_coluna": "Pós-operatório · Laminectomia ou cirurgia medular",
+            "p_choque": "Pós-operatório · Choque hemorrágico",
+            "p_hda": "Pós-operatório · Hemorragia digestiva",
+            "p_gi_neo": "Pós-operatório · Cirurgia gastrointestinal por neoplasia",
+            "p_insuf_resp": "Pós-operatório · Insuficiência respiratória após cirurgia",
+            "p_perfuracao": "Pós-operatório · Perfuração ou obstrução gastrointestinal",
+            "p_outro_neuro": "Pós-operatório · Outro: neurológico",
+            "p_outro_cv": "Pós-operatório · Outro: cardiovascular",
+            "p_outro_resp": "Pós-operatório · Outro: respiratório",
+            "p_outro_gi": "Pós-operatório · Outro: gastrointestinal",
+            "p_outro_metab": "Pós-operatório · Outro: metabólico ou renal"
+          }
+        }
+      ]
+    ],
+    "formula": "<p><strong>APACHE II</strong> = escore fisiológico agudo (12 variáveis, 0 a 4 pontos cada; Glasgow entra como 15 − Glasgow) + pontos de idade (≤ 44 = 0; 45–54 = 2; 55–64 = 3; 65–74 = 5; ≥ 75 = 6) + doença crônica (5 pontos em admissão clínica ou pós-operatório de urgência; 2 pontos no pós-operatório eletivo).</p><p>Oxigenação: com FiO₂ ≥ 50%, pontua o gradiente A-a [FiO₂ × 713 − PaCO₂/0,8 − PaO₂]: ≥ 500 = 4; 350–499 = 3; 200–349 = 2; &lt; 200 = 0. Com FiO₂ &lt; 50%, pontua a PaO₂: &gt; 70 = 0; 61–70 = 1; 55–60 = 3; &lt; 55 = 4. A creatinina tem pontos dobrados na insuficiência renal aguda.</p><p><strong>Mortalidade hospitalar prevista:</strong> ln[R/(1 − R)] = −3,517 + 0,146 × APACHE II + 0,603 (se cirurgia de urgência) + peso da categoria diagnóstica.</p>",
+    "table": [
+      [
+        "APACHE II",
+        "Mortalidade observada, clínicos",
+        "Mortalidade observada, pós-operatórios"
+      ],
+      [
+        "0 a 4",
+        "4%",
+        "1%"
+      ],
+      [
+        "5 a 9",
+        "8%",
+        "3%"
+      ],
+      [
+        "10 a 14",
+        "15%",
+        "7%"
+      ],
+      [
+        "15 a 19",
+        "25%",
+        "12%"
+      ],
+      [
+        "20 a 24",
+        "40%",
+        "30%"
+      ],
+      [
+        "25 a 29",
+        "55%",
+        "35%"
+      ],
+      [
+        "30 a 34",
+        "73%",
+        "73%"
+      ],
+      [
+        "35 ou mais",
+        "85%",
+        "88%"
+      ]
+    ],
+    "table_note": "Mortalidade hospitalar aproximada por faixa na coorte de derivação (Knaus, 1985). A calculadora usa a equação logística com o peso da categoria diagnóstica.",
+    "tips": [
+      "Use o <strong>pior</strong> valor de cada variável nas primeiras 24 horas de UTI (o mais distante do normal), não o da admissão.",
+      "Com FiO₂ ≥ 50%, a oxigenação é pontuada pelo gradiente A-a; abaixo disso, pela PaO₂. A PaCO₂ é necessária só no primeiro caso.",
+      "Doença crônica exige diagnóstico prévio à internação: cirrose com hipertensão portal, insuficiência cardíaca NYHA IV, DPOC ou doença vascular com limitação grave, diálise crônica ou imunossupressão.",
+      "O APACHE II foi calibrado nos anos 1980 e tende a superestimar a mortalidade nas UTIs atuais; para comparar desempenho, calibre localmente ou use modelos mais novos (SAPS 3).",
+      "Não use a mortalidade prevista para decidir limitação de suporte de um paciente individual: o modelo descreve grupos."
+    ],
+    "sources": [
+      [
+        "Knaus WA, Draper EA, Wagner DP, Zimmerman JE. APACHE II: a severity of disease classification system. Crit Care Med, 1985.",
+        "https://doi.org/10.1097/00003246-198510000-00009"
+      ]
+    ],
+    "cases": [
+      [
+        "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        {
+          "idade": 40,
+          "temp": 37,
+          "pam": 85,
+          "fc": 80,
+          "fr": 16,
+          "fio2": 30,
+          "pao2": 95,
+          "ph": 7.4,
+          "na": 140,
+          "k": 4.2,
+          "cr": 0.9,
+          "ira": "0",
+          "ht": 38,
+          "leuco": 9,
+          "gcs": 15,
+          "cronica": "0",
+          "admissao": "elet",
+          "diag": "p_valva"
+        },
+        {
+          "score": 0,
+          "raw": {
+            "mort": 0.834
+          },
+          "level": "low",
+          "tol": 0.02
+        }
+      ],
+      [
+        "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        {
+          "idade": 55,
+          "temp": 38.7,
+          "pam": 65,
+          "fc": 115,
+          "fr": 28,
+          "fio2": 40,
+          "pao2": 65,
+          "ph": 7.3,
+          "na": 138,
+          "k": 4,
+          "cr": 1.6,
+          "ira": "0",
+          "ht": 35,
+          "leuco": 18,
+          "gcs": 14,
+          "cronica": "0",
+          "admissao": "clin",
+          "diag": "n_sepse"
+        },
+        {
+          "score": 16,
+          "raw": {
+            "aps": 13,
+            "mort": 25.58
+          },
+          "level": "mid",
+          "tol": 0.05
+        }
+      ],
+      [
+        "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        {
+          "idade": 78,
+          "temp": 35,
+          "pam": 45,
+          "fc": 145,
+          "fr": 36,
+          "fio2": 80,
+          "pao2": 70,
+          "paco2": 40,
+          "ph": 7.2,
+          "na": 128,
+          "k": 5.8,
+          "cr": 2.5,
+          "ira": "1",
+          "ht": 28,
+          "leuco": 25,
+          "gcs": 10,
+          "cronica": "1",
+          "admissao": "urg",
+          "diag": "p_perfuracao"
+        },
+        {
+          "score": 46,
+          "raw": {
+            "aps": 35,
+            "mort": 97.94
+          },
+          "level": "high",
+          "tol": 0.05
+        }
+      ],
+      [
+        "FiO₂ 60% sem PaCO₂: pede o dado",
+        {
+          "idade": 50,
+          "temp": 37,
+          "pam": 80,
+          "fc": 90,
+          "fr": 20,
+          "fio2": 60,
+          "pao2": 80,
+          "ph": 7.4,
+          "na": 140,
+          "k": 4,
+          "cr": 1,
+          "ira": "0",
+          "ht": 38,
+          "leuco": 10,
+          "gcs": 15,
+          "cronica": "0",
+          "admissao": "clin",
+          "diag": "n_infec_resp"
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

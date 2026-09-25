@@ -1,0 +1,209 @@
+[
+  {
+    "label": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "score": 0,
+      "raw": {
+        "mort": 0.834
+      },
+      "level": "low",
+      "tol": 0.02
+    },
+    "originalInput": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+    "input": {
+      "idade": 55,
+      "temp": 38.7,
+      "pam": 65,
+      "fc": 115,
+      "fr": 28,
+      "fio2": 40,
+      "pao2": 65,
+      "ph": 7.3,
+      "na": 138,
+      "k": 4,
+      "cr": 1.6,
+      "ira": "0",
+      "ht": 35,
+      "leuco": 18,
+      "gcs": 14,
+      "cronica": "0",
+      "admissao": "clin",
+      "diag": "n_sepse"
+    },
+    "expected": {
+      "score": 16,
+      "raw": {
+        "aps": 13,
+        "mort": 25.58
+      },
+      "level": "mid",
+      "tol": 0.05
+    },
+    "originalInput": {
+      "idade": 55,
+      "temp": 38.7,
+      "pam": 65,
+      "fc": 115,
+      "fr": 28,
+      "fio2": 40,
+      "pao2": 65,
+      "ph": 7.3,
+      "na": 138,
+      "k": 4,
+      "cr": 1.6,
+      "ira": "0",
+      "ht": 35,
+      "leuco": 18,
+      "gcs": 14,
+      "cronica": "0",
+      "admissao": "clin",
+      "diag": "n_sepse"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+    "input": {
+      "idade": 78,
+      "temp": 35,
+      "pam": 45,
+      "fc": 145,
+      "fr": 36,
+      "fio2": 80,
+      "pao2": 70,
+      "paco2": 40,
+      "ph": 7.2,
+      "na": 128,
+      "k": 5.8,
+      "cr": 2.5,
+      "ira": "1",
+      "ht": 28,
+      "leuco": 25,
+      "gcs": 10,
+      "cronica": "1",
+      "admissao": "urg",
+      "diag": "p_perfuracao"
+    },
+    "expected": {
+      "score": 46,
+      "raw": {
+        "aps": 35,
+        "mort": 97.94
+      },
+      "level": "high",
+      "tol": 0.05
+    },
+    "originalInput": {
+      "idade": 78,
+      "temp": 35,
+      "pam": 45,
+      "fc": 145,
+      "fr": 36,
+      "fio2": 80,
+      "pao2": 70,
+      "paco2": 40,
+      "ph": 7.2,
+      "na": 128,
+      "k": 5.8,
+      "cr": 2.5,
+      "ira": "1",
+      "ht": 28,
+      "leuco": 25,
+      "gcs": 10,
+      "cronica": "1",
+      "admissao": "urg",
+      "diag": "p_perfuracao"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "FiO₂ 60% sem PaCO₂: pede o dado",
+    "input": {
+      "idade": 50,
+      "temp": 37,
+      "pam": 80,
+      "fc": 90,
+      "fr": 20,
+      "fio2": 60,
+      "pao2": 80,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4,
+      "cr": 1,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 10,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "clin",
+      "diag": "n_infec_resp"
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "idade": 50,
+      "temp": 37,
+      "pam": 80,
+      "fc": 90,
+      "fr": 20,
+      "fio2": 60,
+      "pao2": 80,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4,
+      "cr": 1,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 10,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "clin",
+      "diag": "n_infec_resp"
+    },
+    "expandedZeroOptions": []
+  }
+]
