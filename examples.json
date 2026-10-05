@@ -1,6 +1,29 @@
 [
   {
-    "label": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+    "id": "apache-ii",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+    "originalInput": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
     "input": {
       "idade": 40,
       "temp": 37,
@@ -29,30 +52,52 @@
       "level": "low",
       "tol": 0.02
     },
-    "originalInput": {
-      "idade": 40,
-      "temp": 37,
-      "pam": 85,
-      "fc": 80,
-      "fr": 16,
-      "fio2": 30,
-      "pao2": 95,
-      "ph": 7.4,
-      "na": 140,
-      "k": 4.2,
-      "cr": 0.9,
-      "ira": "0",
-      "ht": 38,
-      "leuco": 9,
-      "gcs": 15,
-      "cronica": "0",
-      "admissao": "elet",
-      "diag": "p_valva"
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "APACHE II",
+      "raw": {
+        "score": 0,
+        "aps": 0,
+        "mort": 0.8342622885998624
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+    "id": "apache-ii",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+    "originalInput": {
+      "idade": 55,
+      "temp": 38.7,
+      "pam": 65,
+      "fc": 115,
+      "fr": 28,
+      "fio2": 40,
+      "pao2": 65,
+      "ph": 7.3,
+      "na": 138,
+      "k": 4,
+      "cr": 1.6,
+      "ira": "0",
+      "ht": 35,
+      "leuco": 18,
+      "gcs": 14,
+      "cronica": "0",
+      "admissao": "clin",
+      "diag": "n_sepse"
+    },
     "input": {
       "idade": 55,
       "temp": 38.7,
@@ -82,30 +127,53 @@
       "level": "mid",
       "tol": 0.05
     },
-    "originalInput": {
-      "idade": 55,
-      "temp": 38.7,
-      "pam": 65,
-      "fc": 115,
-      "fr": 28,
-      "fio2": 40,
-      "pao2": 65,
-      "ph": 7.3,
-      "na": 138,
-      "k": 4,
-      "cr": 1.6,
-      "ira": "0",
-      "ht": 35,
-      "leuco": 18,
-      "gcs": 14,
-      "cronica": "0",
-      "admissao": "clin",
-      "diag": "n_sepse"
+    "recordedResult": {
+      "main": [
+        "16",
+        "pontos"
+      ],
+      "label": "APACHE II",
+      "raw": {
+        "score": 16,
+        "aps": 13,
+        "mort": 25.578361489649875
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+    "id": "apache-ii",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+    "originalInput": {
+      "idade": 78,
+      "temp": 35,
+      "pam": 45,
+      "fc": 145,
+      "fr": 36,
+      "fio2": 80,
+      "pao2": 70,
+      "paco2": 40,
+      "ph": 7.2,
+      "na": 128,
+      "k": 5.8,
+      "cr": 2.5,
+      "ira": "1",
+      "ht": 28,
+      "leuco": 25,
+      "gcs": 10,
+      "cronica": "1",
+      "admissao": "urg",
+      "diag": "p_perfuracao"
+    },
     "input": {
       "idade": 78,
       "temp": 35,
@@ -136,31 +204,52 @@
       "level": "high",
       "tol": 0.05
     },
-    "originalInput": {
-      "idade": 78,
-      "temp": 35,
-      "pam": 45,
-      "fc": 145,
-      "fr": 36,
-      "fio2": 80,
-      "pao2": 70,
-      "paco2": 40,
-      "ph": 7.2,
-      "na": 128,
-      "k": 5.8,
-      "cr": 2.5,
-      "ira": "1",
-      "ht": 28,
-      "leuco": 25,
-      "gcs": 10,
-      "cronica": "1",
-      "admissao": "urg",
-      "diag": "p_perfuracao"
+    "recordedResult": {
+      "main": [
+        "46",
+        "pontos"
+      ],
+      "label": "APACHE II",
+      "raw": {
+        "score": 46,
+        "aps": 35,
+        "mort": 97.94070791779717
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "FiO₂ 60% sem PaCO₂: pede o dado",
+    "id": "apache-ii",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "FiO₂ 60% sem PaCO₂: pede o dado",
+    "originalInput": {
+      "idade": 50,
+      "temp": 37,
+      "pam": 80,
+      "fc": 90,
+      "fr": 20,
+      "fio2": 60,
+      "pao2": 80,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4,
+      "cr": 1,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 10,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "clin",
+      "diag": "n_infec_resp"
+    },
     "input": {
       "idade": 50,
       "temp": 37,
@@ -184,26 +273,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "idade": 50,
-      "temp": 37,
-      "pam": 80,
-      "fc": 90,
-      "fr": 20,
-      "fio2": 60,
-      "pao2": 80,
-      "ph": 7.4,
-      "na": 140,
-      "k": 4,
-      "cr": 1,
-      "ira": "0",
-      "ht": 38,
-      "leuco": 10,
-      "gcs": 15,
-      "cronica": "0",
-      "admissao": "clin",
-      "diag": "n_infec_resp"
+    "recordedResult": {
+      "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

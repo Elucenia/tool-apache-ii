@@ -1,0 +1,454 @@
+{
+  "id": "apache-ii",
+  "at": "2026-10-05T17:29:02.827Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/apache-ii/calculator.js",
+    "bytes": 11783,
+    "sha256": "d73d3c4d21053c7938ff72deab86de5c9c251bd7b3ab8da56e0a70806e1a851d"
+  },
+  "cases": [
+    {
+      "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+      "input": {
+        "idade": 40,
+        "temp": 37,
+        "pam": 85,
+        "fc": 80,
+        "fr": 16,
+        "fio2": 30,
+        "pao2": 95,
+        "ph": 7.4,
+        "na": 140,
+        "k": 4.2,
+        "cr": 0.9,
+        "ira": "0",
+        "ht": 38,
+        "leuco": 9,
+        "gcs": 15,
+        "cronica": "0",
+        "admissao": "elet",
+        "diag": "p_valva"
+      },
+      "obtained": {
+        "id": "apache-ii",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "APACHE II",
+        "raw": {
+          "score": 0,
+          "aps": 0,
+          "mort": 0.8342622885998624
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mort",
+          "expected": 0.834,
+          "obtained": 0.8342622885998624,
+          "tolerance": 0.02,
+          "difference": 0.0002622885998624369,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 0.02,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.aps",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mort",
+          "expected": 0.8342622885998624,
+          "obtained": 0.8342622885998624,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0",
+          "obtained": "0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+      "input": {
+        "idade": 55,
+        "temp": 38.7,
+        "pam": 65,
+        "fc": 115,
+        "fr": 28,
+        "fio2": 40,
+        "pao2": 65,
+        "ph": 7.3,
+        "na": 138,
+        "k": 4,
+        "cr": 1.6,
+        "ira": "0",
+        "ht": 35,
+        "leuco": 18,
+        "gcs": 14,
+        "cronica": "0",
+        "admissao": "clin",
+        "diag": "n_sepse"
+      },
+      "obtained": {
+        "id": "apache-ii",
+        "main": [
+          "16",
+          "pontos"
+        ],
+        "label": "APACHE II",
+        "raw": {
+          "score": 16,
+          "aps": 13,
+          "mort": 25.578361489649875
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.aps",
+          "expected": 13,
+          "obtained": 13,
+          "tolerance": 0.05,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.mort",
+          "expected": 25.58,
+          "obtained": 25.578361489649875,
+          "tolerance": 0.05,
+          "difference": 0.001638510350122857,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 16,
+          "obtained": 16,
+          "tolerance": 0.05,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 16,
+          "obtained": 16,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.aps",
+          "expected": 13,
+          "obtained": 13,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mort",
+          "expected": 25.578361489649875,
+          "obtained": 25.578361489649875,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "16",
+          "obtained": "16",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+      "input": {
+        "idade": 78,
+        "temp": 35,
+        "pam": 45,
+        "fc": 145,
+        "fr": 36,
+        "fio2": 80,
+        "pao2": 70,
+        "paco2": 40,
+        "ph": 7.2,
+        "na": 128,
+        "k": 5.8,
+        "cr": 2.5,
+        "ira": "1",
+        "ht": 28,
+        "leuco": 25,
+        "gcs": 10,
+        "cronica": "1",
+        "admissao": "urg",
+        "diag": "p_perfuracao"
+      },
+      "obtained": {
+        "id": "apache-ii",
+        "main": [
+          "46",
+          "pontos"
+        ],
+        "label": "APACHE II",
+        "raw": {
+          "score": 46,
+          "aps": 35,
+          "mort": 97.94070791779717
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.aps",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 0.05,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.mort",
+          "expected": 97.94,
+          "obtained": 97.94070791779717,
+          "tolerance": 0.05,
+          "difference": 0.0007079177971718309,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 46,
+          "obtained": 46,
+          "tolerance": 0.05,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 46,
+          "obtained": 46,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.aps",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mort",
+          "expected": 97.94070791779717,
+          "obtained": 97.94070791779717,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "46",
+          "obtained": "46",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "FiO₂ 60% sem PaCO₂: pede o dado",
+      "input": {
+        "idade": 50,
+        "temp": 37,
+        "pam": 80,
+        "fc": 90,
+        "fr": 20,
+        "fio2": 60,
+        "pao2": 80,
+        "ph": 7.4,
+        "na": 140,
+        "k": 4,
+        "cr": 1,
+        "ira": "0",
+        "ht": 38,
+        "leuco": 10,
+        "gcs": 15,
+        "cronica": "0",
+        "admissao": "clin",
+        "diag": "n_infec_resp"
+      },
+      "obtained": {
+        "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 164,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

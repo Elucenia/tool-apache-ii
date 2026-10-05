@@ -1,0 +1,4508 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "idade": "",
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" idade",
+    "input": {
+      "idade": "NaN",
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" idade",
+    "input": {
+      "idade": "Infinity",
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" idade",
+    "input": {
+      "idade": "1e309",
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" idade",
+    "input": {
+      "idade": "invalid",
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} idade",
+    "input": {
+      "idade": {},
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true idade",
+    "input": {
+      "idade": true,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum idade",
+    "input": {
+      "idade": 14.4,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum idade",
+    "input": {
+      "idade": 121,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field temp",
+    "input": {
+      "idade": 40,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field temp",
+    "input": {
+      "idade": 40,
+      "temp": "",
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" temp",
+    "input": {
+      "idade": 40,
+      "temp": "NaN",
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" temp",
+    "input": {
+      "idade": 40,
+      "temp": "Infinity",
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" temp",
+    "input": {
+      "idade": 40,
+      "temp": "1e309",
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" temp",
+    "input": {
+      "idade": 40,
+      "temp": "invalid",
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} temp",
+    "input": {
+      "idade": 40,
+      "temp": {},
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true temp",
+    "input": {
+      "idade": 40,
+      "temp": true,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum temp",
+    "input": {
+      "idade": 40,
+      "temp": 22.5,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum temp",
+    "input": {
+      "idade": 40,
+      "temp": 49.5,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": "",
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": "NaN",
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": "Infinity",
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": "1e309",
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": "invalid",
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": {},
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": true,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 18,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pam",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 275,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": "",
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": "NaN",
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": "Infinity",
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": "1e309",
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": "invalid",
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": {},
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": true,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 18,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fc",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 275,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": "",
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": "NaN",
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": "Infinity",
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": "1e309",
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": "invalid",
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": {},
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": true,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": -1,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 88,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": "",
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": "NaN",
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": "Infinity",
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": "1e309",
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": "invalid",
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": {},
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": true,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 18.9,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fio2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 110,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fio2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": "",
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": "NaN",
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": "Infinity",
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": "1e309",
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": "invalid",
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": {},
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": true,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 18,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pao2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 770,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": 9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum paco2",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva",
+      "paco2": 165
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "paco2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": "",
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": "NaN",
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": "Infinity",
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": "1e309",
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": "invalid",
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": {},
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": true,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 5.5,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ph",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 9,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ph"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": "",
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": "NaN",
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": "Infinity",
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": "1e309",
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": "invalid",
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": {},
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": true,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 81,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum na",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 220,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": "",
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": "NaN",
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": "Infinity",
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": "1e309",
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": "invalid",
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": {},
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": true,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 0,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum k",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 11,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": "",
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": "NaN",
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": "Infinity",
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": "1e309",
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": "invalid",
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": {},
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": true,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": -0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum cr",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 22,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ira",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ira"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ira",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ira"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option ira",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "__ELUCENIA_INVALID_OPTION__",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "ira"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": "",
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": "NaN",
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": "Infinity",
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": "1e309",
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": "invalid",
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": {},
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": true,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 4,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ht",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 82.5,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": "",
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": "NaN",
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": "Infinity",
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": "1e309",
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": "invalid",
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": {},
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": true,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": -0.9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum leuco",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 220,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": "",
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": "NaN",
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": "Infinity",
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": "1e309",
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": "invalid",
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": {},
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": true,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 2,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum gcs",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 16.5,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gcs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cronica",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cronica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cronica",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cronica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option cronica",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "__ELUCENIA_INVALID_OPTION__",
+      "admissao": "elet",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "cronica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field admissao",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "admissao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field admissao",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "admissao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option admissao",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "__ELUCENIA_INVALID_OPTION__",
+      "diag": "p_valva"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "admissao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field diag",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "diag"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field diag",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "diag"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option diag",
+    "input": {
+      "idade": 40,
+      "temp": 37,
+      "pam": 85,
+      "fc": 80,
+      "fr": 16,
+      "fio2": 30,
+      "pao2": 95,
+      "ph": 7.4,
+      "na": 140,
+      "k": 4.2,
+      "cr": 0.9,
+      "ira": "0",
+      "ht": 38,
+      "leuco": 9,
+      "gcs": 15,
+      "cronica": "0",
+      "admissao": "elet",
+      "diag": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "diag"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
