@@ -1,0 +1,1037 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "apache-ii",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/apache-ii/calculator.js",
+    "sha256": "d73d3c4d21053c7938ff72deab86de5c9c251bd7b3ab8da56e0a70806e1a851d",
+    "bytes": 11783
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "apache-ii",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+      "originalInput": {
+        "idade": 40,
+        "temp": 37,
+        "pam": 85,
+        "fc": 80,
+        "fr": 16,
+        "fio2": 30,
+        "pao2": 95,
+        "ph": 7.4,
+        "na": 140,
+        "k": 4.2,
+        "cr": 0.9,
+        "ira": "0",
+        "ht": 38,
+        "leuco": 9,
+        "gcs": 15,
+        "cronica": "0",
+        "admissao": "elet",
+        "diag": "p_valva"
+      },
+      "input": {
+        "idade": 40,
+        "temp": 37,
+        "pam": 85,
+        "fc": 80,
+        "fr": 16,
+        "fio2": 30,
+        "pao2": 95,
+        "ph": 7.4,
+        "na": 140,
+        "k": 4.2,
+        "cr": 0.9,
+        "ira": "0",
+        "ht": 38,
+        "leuco": 9,
+        "gcs": 15,
+        "cronica": "0",
+        "admissao": "elet",
+        "diag": "p_valva"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 0,
+        "raw": {
+          "mort": 0.834
+        },
+        "level": "low",
+        "tol": 0.02
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "APACHE II",
+        "raw": {
+          "score": 0,
+          "aps": 0,
+          "mort": 0.8342622885998624
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 40,
+            "temp": 37,
+            "pam": 85,
+            "fc": 80,
+            "fr": 16,
+            "fio2": 30,
+            "pao2": 95,
+            "ph": 7.4,
+            "na": 140,
+            "k": 4.2,
+            "cr": 0.9,
+            "ira": "0",
+            "ht": 38,
+            "leuco": 9,
+            "gcs": 15,
+            "cronica": "0",
+            "admissao": "elet",
+            "diag": "p_valva"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+          "startedAt": "2026-10-05T17:35:48.878Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "apache-ii",
+              "main": [
+                "0",
+                "pontos"
+              ],
+              "label": "APACHE II",
+              "raw": {
+                "score": 0,
+                "aps": 0,
+                "mort": 0.8342622885998624
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "77c0320c7f1df1c0637ce6a5019c64e584b231313b06639c7ae4b131b384a1c9",
+          "bytes": 160,
+          "elapsedMs": 9.360000000000582
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "startedAt": "2026-10-05T17:35:48.878Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "apache-ii",
+            "main": [
+              "0",
+              "pontos"
+            ],
+            "label": "APACHE II",
+            "raw": {
+              "score": 0,
+              "aps": 0,
+              "mort": 0.8342622885998624
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "77c0320c7f1df1c0637ce6a5019c64e584b231313b06639c7ae4b131b384a1c9",
+        "bytes": 160,
+        "elapsedMs": 9.360000000000582
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.mort",
+            "expected": 0.834,
+            "obtained": 0.8342622885998624,
+            "tolerance": 0.02,
+            "difference": 0.0002622885998624369,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 0.02,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.aps",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mort",
+            "expected": 0.8342622885998624,
+            "obtained": 0.8342622885998624,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "apache-ii",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+      "originalInput": {
+        "idade": 55,
+        "temp": 38.7,
+        "pam": 65,
+        "fc": 115,
+        "fr": 28,
+        "fio2": 40,
+        "pao2": 65,
+        "ph": 7.3,
+        "na": 138,
+        "k": 4,
+        "cr": 1.6,
+        "ira": "0",
+        "ht": 35,
+        "leuco": 18,
+        "gcs": 14,
+        "cronica": "0",
+        "admissao": "clin",
+        "diag": "n_sepse"
+      },
+      "input": {
+        "idade": 55,
+        "temp": 38.7,
+        "pam": 65,
+        "fc": 115,
+        "fr": 28,
+        "fio2": 40,
+        "pao2": 65,
+        "ph": 7.3,
+        "na": 138,
+        "k": 4,
+        "cr": 1.6,
+        "ira": "0",
+        "ht": 35,
+        "leuco": 18,
+        "gcs": 14,
+        "cronica": "0",
+        "admissao": "clin",
+        "diag": "n_sepse"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 16,
+        "raw": {
+          "aps": 13,
+          "mort": 25.58
+        },
+        "level": "mid",
+        "tol": 0.05
+      },
+      "recordedResult": {
+        "main": [
+          "16",
+          "pontos"
+        ],
+        "label": "APACHE II",
+        "raw": {
+          "score": 16,
+          "aps": 13,
+          "mort": 25.578361489649875
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 55,
+            "temp": 38.7,
+            "pam": 65,
+            "fc": 115,
+            "fr": 28,
+            "fio2": 40,
+            "pao2": 65,
+            "ph": 7.3,
+            "na": 138,
+            "k": 4,
+            "cr": 1.6,
+            "ira": "0",
+            "ht": 35,
+            "leuco": 18,
+            "gcs": 14,
+            "cronica": "0",
+            "admissao": "clin",
+            "diag": "n_sepse"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+          "startedAt": "2026-10-05T17:35:49.191Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "apache-ii",
+              "main": [
+                "16",
+                "pontos"
+              ],
+              "label": "APACHE II",
+              "raw": {
+                "score": 16,
+                "aps": 13,
+                "mort": 25.578361489649875
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "7a6688363e68d21adca81113ea47890dcb167d9d3490ae7e0a06c47f05399993",
+          "bytes": 163,
+          "elapsedMs": 2.9728000000004613
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "startedAt": "2026-10-05T17:35:49.191Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "apache-ii",
+            "main": [
+              "16",
+              "pontos"
+            ],
+            "label": "APACHE II",
+            "raw": {
+              "score": 16,
+              "aps": 13,
+              "mort": 25.578361489649875
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "7a6688363e68d21adca81113ea47890dcb167d9d3490ae7e0a06c47f05399993",
+        "bytes": 163,
+        "elapsedMs": 2.9728000000004613
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.aps",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 0.05,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mort",
+            "expected": 25.58,
+            "obtained": 25.578361489649875,
+            "tolerance": 0.05,
+            "difference": 0.001638510350122857,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 16,
+            "obtained": 16,
+            "tolerance": 0.05,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 16,
+            "obtained": 16,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.aps",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mort",
+            "expected": 25.578361489649875,
+            "obtained": 25.578361489649875,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "16",
+            "obtained": "16",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "apache-ii",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+      "originalInput": {
+        "idade": 78,
+        "temp": 35,
+        "pam": 45,
+        "fc": 145,
+        "fr": 36,
+        "fio2": 80,
+        "pao2": 70,
+        "paco2": 40,
+        "ph": 7.2,
+        "na": 128,
+        "k": 5.8,
+        "cr": 2.5,
+        "ira": "1",
+        "ht": 28,
+        "leuco": 25,
+        "gcs": 10,
+        "cronica": "1",
+        "admissao": "urg",
+        "diag": "p_perfuracao"
+      },
+      "input": {
+        "idade": 78,
+        "temp": 35,
+        "pam": 45,
+        "fc": 145,
+        "fr": 36,
+        "fio2": 80,
+        "pao2": 70,
+        "paco2": 40,
+        "ph": 7.2,
+        "na": 128,
+        "k": 5.8,
+        "cr": 2.5,
+        "ira": "1",
+        "ht": 28,
+        "leuco": 25,
+        "gcs": 10,
+        "cronica": "1",
+        "admissao": "urg",
+        "diag": "p_perfuracao"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 46,
+        "raw": {
+          "aps": 35,
+          "mort": 97.94
+        },
+        "level": "high",
+        "tol": 0.05
+      },
+      "recordedResult": {
+        "main": [
+          "46",
+          "pontos"
+        ],
+        "label": "APACHE II",
+        "raw": {
+          "score": 46,
+          "aps": 35,
+          "mort": 97.94070791779717
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 78,
+            "temp": 35,
+            "pam": 45,
+            "fc": 145,
+            "fr": 36,
+            "fio2": 80,
+            "pao2": 70,
+            "paco2": 40,
+            "ph": 7.2,
+            "na": 128,
+            "k": 5.8,
+            "cr": 2.5,
+            "ira": "1",
+            "ht": 28,
+            "leuco": 25,
+            "gcs": 10,
+            "cronica": "1",
+            "admissao": "urg",
+            "diag": "p_perfuracao"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+          "startedAt": "2026-10-05T17:35:49.502Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "apache-ii",
+              "main": [
+                "46",
+                "pontos"
+              ],
+              "label": "APACHE II",
+              "raw": {
+                "score": 46,
+                "aps": 35,
+                "mort": 97.94070791779717
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3c9bd17e57e7dbeeb68a4ce33a233f686356e066a516961f4388c999ae9e4bbe",
+          "bytes": 162,
+          "elapsedMs": 2.878099999999904
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "startedAt": "2026-10-05T17:35:49.502Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "apache-ii",
+            "main": [
+              "46",
+              "pontos"
+            ],
+            "label": "APACHE II",
+            "raw": {
+              "score": 46,
+              "aps": 35,
+              "mort": 97.94070791779717
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3c9bd17e57e7dbeeb68a4ce33a233f686356e066a516961f4388c999ae9e4bbe",
+        "bytes": 162,
+        "elapsedMs": 2.878099999999904
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.aps",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 0.05,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.mort",
+            "expected": 97.94,
+            "obtained": 97.94070791779717,
+            "tolerance": 0.05,
+            "difference": 0.0007079177971718309,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 46,
+            "obtained": 46,
+            "tolerance": 0.05,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 46,
+            "obtained": 46,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.aps",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.mort",
+            "expected": 97.94070791779717,
+            "obtained": 97.94070791779717,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "46",
+            "obtained": "46",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "apache-ii",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "FiO₂ 60% sem PaCO₂: pede o dado",
+      "originalInput": {
+        "idade": 50,
+        "temp": 37,
+        "pam": 80,
+        "fc": 90,
+        "fr": 20,
+        "fio2": 60,
+        "pao2": 80,
+        "ph": 7.4,
+        "na": 140,
+        "k": 4,
+        "cr": 1,
+        "ira": "0",
+        "ht": 38,
+        "leuco": 10,
+        "gcs": 15,
+        "cronica": "0",
+        "admissao": "clin",
+        "diag": "n_infec_resp"
+      },
+      "input": {
+        "idade": 50,
+        "temp": 37,
+        "pam": 80,
+        "fc": 90,
+        "fr": 20,
+        "fio2": 60,
+        "pao2": 80,
+        "ph": 7.4,
+        "na": 140,
+        "k": 4,
+        "cr": 1,
+        "ira": "0",
+        "ht": 38,
+        "leuco": 10,
+        "gcs": 15,
+        "cronica": "0",
+        "admissao": "clin",
+        "diag": "n_infec_resp"
+      },
+      "amendments": [],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 50,
+            "temp": 37,
+            "pam": 80,
+            "fc": 90,
+            "fr": 20,
+            "fio2": 60,
+            "pao2": 80,
+            "ph": 7.4,
+            "na": 140,
+            "k": 4,
+            "cr": 1,
+            "ira": "0",
+            "ht": 38,
+            "leuco": 10,
+            "gcs": 15,
+            "cronica": "0",
+            "admissao": "clin",
+            "diag": "n_infec_resp"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+          "startedAt": "2026-10-05T17:35:49.813Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial.",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "667f7350065595c1243fa0de6bd554fbea2d9071f44ac1d1334bacc3b9fa9916",
+          "bytes": 118,
+          "elapsedMs": 4.557300000000396
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/apache-ii/calculate",
+        "startedAt": "2026-10-05T17:35:49.813Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial.",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "667f7350065595c1243fa0de6bd554fbea2d9071f44ac1d1334bacc3b9fa9916",
+        "bytes": 118,
+        "elapsedMs": 4.557300000000396
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "Com FiO₂ ≥ 50%, informe a PaCO₂ para calcular o gradiente alvéolo-arterial.",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
