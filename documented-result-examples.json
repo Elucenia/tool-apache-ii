@@ -1,0 +1,2689 @@
+{
+  "id": "apache-ii",
+  "implementationVersion": "apache-ii@native-2026-10-05+5b7f24cbf12f",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Escore fisiológico agudo (APS)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Doença crônica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalidade hospitalar prevista",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,8%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalidade hospitalar prevista de 0,8%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Use os piores valores das primeiras 24 horas de UTI. A previsão vale para grupos de pacientes, não para decidir condutas individuais.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Escore fisiológico agudo (APS)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "13 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Doença crônica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalidade hospitalar prevista",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "25,6%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalidade hospitalar prevista de 25,6%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Use os piores valores das primeiras 24 horas de UTI. A previsão vale para grupos de pacientes, não para decidir condutas individuais.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Escore fisiológico agudo (APS)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "35 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gradiente A-a (FiO₂ ≥ 50%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Doença crônica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Mortalidade hospitalar prevista",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "97,9%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalidade hospitalar prevista de 97,9%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Use os piores valores das primeiras 24 horas de UTI. A previsão vale para grupos de pacientes, não para decidir condutas individuais.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Acute physiology score (APS)",
+                "locale": "en",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Age",
+                "locale": "en",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Chronic disease",
+                "locale": "en",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Predicted in-hospital mortality",
+                "locale": "en",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0.8%",
+                "locale": "en",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Predicted in-hospital mortality of 0.8%",
+            "locale": "en",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "Use the worst values from the first 24 hours in the ICU. The prediction applies to patient groups, not to decide individual management.",
+            "locale": "en",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Acute physiology score (APS)",
+                "locale": "en",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Age",
+                "locale": "en",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Chronic disease",
+                "locale": "en",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Predicted in-hospital mortality",
+                "locale": "en",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25.6%",
+                "locale": "en",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Predicted in-hospital mortality of 25.6%",
+            "locale": "en",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "Use the worst values from the first 24 hours in the ICU. The prediction applies to patient groups, not to decide individual management.",
+            "locale": "en",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Acute physiology score (APS)",
+                "locale": "en",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "A-a gradient (FiO₂ ≥ 50%)",
+                "locale": "en",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "en",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Age",
+                "locale": "en",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Chronic disease",
+                "locale": "en",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 points",
+                "locale": "en",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Predicted in-hospital mortality",
+                "locale": "en",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97.9%",
+                "locale": "en",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Predicted in-hospital mortality of 97.9%",
+            "locale": "en",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "Use the worst values from the first 24 hours in the ICU. The prediction applies to patient groups, not to decide individual management.",
+            "locale": "en",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntuación de fisiología aguda (APS)",
+                "locale": "es",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad",
+                "locale": "es",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Enfermedad crónica",
+                "locale": "es",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalidad hospitalaria prevista",
+                "locale": "es",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0,8%",
+                "locale": "es",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalidad hospitalaria prevista de 0,8%",
+            "locale": "es",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "Use los peores valores de las primeras 24 horas en la UCI. La predicción vale para grupos de pacientes, no para decidir conductas individuales.",
+            "locale": "es",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntuación de fisiología aguda (APS)",
+                "locale": "es",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad",
+                "locale": "es",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Enfermedad crónica",
+                "locale": "es",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalidad hospitalaria prevista",
+                "locale": "es",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25,6%",
+                "locale": "es",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalidad hospitalaria prevista de 25,6%",
+            "locale": "es",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "Use los peores valores de las primeras 24 horas en la UCI. La predicción vale para grupos de pacientes, no para decidir conductas individuales.",
+            "locale": "es",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntuación de fisiología aguda (APS)",
+                "locale": "es",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gradiente A-a (FiO₂ ≥ 50%)",
+                "locale": "es",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "es",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Edad",
+                "locale": "es",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Enfermedad crónica",
+                "locale": "es",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 puntos",
+                "locale": "es",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Mortalidad hospitalaria prevista",
+                "locale": "es",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97,9%",
+                "locale": "es",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalidad hospitalaria prevista de 97,9%",
+            "locale": "es",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "Use los peores valores de las primeras 24 horas en la UCI. La predicción vale para grupos de pacientes, no para decidir conductas individuales.",
+            "locale": "es",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Score de physiologie aiguë (APS)",
+                "locale": "fr",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge",
+                "locale": "fr",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maladie chronique",
+                "locale": "fr",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalité hospitalière prévue",
+                "locale": "fr",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0,8%",
+                "locale": "fr",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalité hospitalière prévue de 0,8%",
+            "locale": "fr",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "Utilisez les pires valeurs des 24 premières heures en soins intensifs. La prédiction s’applique à des groupes de patients, pas pour décider des conduites individuelles.",
+            "locale": "fr",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Score de physiologie aiguë (APS)",
+                "locale": "fr",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge",
+                "locale": "fr",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maladie chronique",
+                "locale": "fr",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalité hospitalière prévue",
+                "locale": "fr",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25,6%",
+                "locale": "fr",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalité hospitalière prévue de 25,6%",
+            "locale": "fr",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "Utilisez les pires valeurs des 24 premières heures en soins intensifs. La prédiction s’applique à des groupes de patients, pas pour décider des conduites individuelles.",
+            "locale": "fr",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Score de physiologie aiguë (APS)",
+                "locale": "fr",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gradient A-a (FiO₂ ≥ 50%)",
+                "locale": "fr",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Âge",
+                "locale": "fr",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Maladie chronique",
+                "locale": "fr",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 points",
+                "locale": "fr",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Mortalité hospitalière prévue",
+                "locale": "fr",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97,9%",
+                "locale": "fr",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalité hospitalière prévue de 97,9%",
+            "locale": "fr",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "Utilisez les pires valeurs des 24 premières heures en soins intensifs. La prédiction s’applique à des groupes de patients, pas pour décider des conduites individuelles.",
+            "locale": "fr",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Akutphysiologischer Score (APS)",
+                "locale": "de",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Alter",
+                "locale": "de",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Chronische Erkrankung",
+                "locale": "de",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Vorhergesagte Krankenhaussterblichkeit",
+                "locale": "de",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0,8%",
+                "locale": "de",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vorhergesagte Krankenhaussterblichkeit von 0,8%",
+            "locale": "de",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "Verwenden Sie die schlechtesten Werte der ersten 24 Stunden auf der Intensivstation. Die Vorhersage gilt für Patientengruppen, nicht für Entscheidungen im Einzelfall.",
+            "locale": "de",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Akutphysiologischer Score (APS)",
+                "locale": "de",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Alter",
+                "locale": "de",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Chronische Erkrankung",
+                "locale": "de",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Vorhergesagte Krankenhaussterblichkeit",
+                "locale": "de",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25,6%",
+                "locale": "de",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vorhergesagte Krankenhaussterblichkeit von 25,6%",
+            "locale": "de",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "Verwenden Sie die schlechtesten Werte der ersten 24 Stunden auf der Intensivstation. Die Vorhersage gilt für Patientengruppen, nicht für Entscheidungen im Einzelfall.",
+            "locale": "de",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Akutphysiologischer Score (APS)",
+                "locale": "de",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "A-a-Gradient (FiO₂ ≥ 50%)",
+                "locale": "de",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "de",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Alter",
+                "locale": "de",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Chronische Erkrankung",
+                "locale": "de",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 Punkte",
+                "locale": "de",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Vorhergesagte Krankenhaussterblichkeit",
+                "locale": "de",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97,9%",
+                "locale": "de",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vorhergesagte Krankenhaussterblichkeit von 97,9%",
+            "locale": "de",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "Verwenden Sie die schlechtesten Werte der ersten 24 Stunden auf der Intensivstation. Die Vorhersage gilt für Patientengruppen, nicht für Entscheidungen im Einzelfall.",
+            "locale": "de",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punteggio di fisiologia acuta (APS)",
+                "locale": "it",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età",
+                "locale": "it",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Malattia cronica",
+                "locale": "it",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalità ospedaliera prevista",
+                "locale": "it",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0,8%",
+                "locale": "it",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalità ospedaliera prevista del 0,8%",
+            "locale": "it",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "Usare i valori peggiori delle prime 24 ore in terapia intensiva. La previsione vale per gruppi di pazienti, non per decidere condotte individuali.",
+            "locale": "it",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punteggio di fisiologia acuta (APS)",
+                "locale": "it",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età",
+                "locale": "it",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Malattia cronica",
+                "locale": "it",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Mortalità ospedaliera prevista",
+                "locale": "it",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25,6%",
+                "locale": "it",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalità ospedaliera prevista del 25,6%",
+            "locale": "it",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "Usare i valori peggiori delle prime 24 ore in terapia intensiva. La previsione vale per gruppi di pazienti, non per decidere condotte individuali.",
+            "locale": "it",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punteggio di fisiologia acuta (APS)",
+                "locale": "it",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gradiente A-a (FiO₂ ≥ 50%)",
+                "locale": "it",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "it",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Età",
+                "locale": "it",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Malattia cronica",
+                "locale": "it",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 punti",
+                "locale": "it",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Mortalità ospedaliera prevista",
+                "locale": "it",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97,9%",
+                "locale": "it",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mortalità ospedaliera prevista del 97,9%",
+            "locale": "it",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "Usare i valori peggiori delle prime 24 ore in terapia intensiva. La previsione vale per gruppi di pazienti, non per decidere condotte individuali.",
+            "locale": "it",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "درجة الفسيولوجيا الحادة (APS)",
+                "locale": "ar",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "٠ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر",
+                "locale": "ar",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "٠ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "مرض مزمن",
+                "locale": "ar",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "٠ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "الوفيات المتوقعة داخل المستشفى",
+                "locale": "ar",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "٠٫٨%",
+                "locale": "ar",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الوفيات المتوقعة داخل المستشفى بنسبة ٠٫٨%",
+            "locale": "ar",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "استخدم أسوأ القيم خلال أول 24 ساعة في وحدة العناية المركزة. ينطبق التنبؤ على مجموعات المرضى، وليس لاتخاذ قرارات فردية.",
+            "locale": "ar",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "درجة الفسيولوجيا الحادة (APS)",
+                "locale": "ar",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "١٣ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر",
+                "locale": "ar",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "٣ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "مرض مزمن",
+                "locale": "ar",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "٠ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "الوفيات المتوقعة داخل المستشفى",
+                "locale": "ar",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "٢٥٫٦%",
+                "locale": "ar",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الوفيات المتوقعة داخل المستشفى بنسبة ٢٥٫٦%",
+            "locale": "ar",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "استخدم أسوأ القيم خلال أول 24 ساعة في وحدة العناية المركزة. ينطبق التنبؤ على مجموعات المرضى، وليس لاتخاذ قرارات فردية.",
+            "locale": "ar",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "درجة الفسيولوجيا الحادة (APS)",
+                "locale": "ar",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "٣٥ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تدرج A-a (FiO₂ ≥ 50%)",
+                "locale": "ar",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "٤٥٠ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "العمر",
+                "locale": "ar",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "٦ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "مرض مزمن",
+                "locale": "ar",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "٥ نقطة",
+                "locale": "ar",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "الوفيات المتوقعة داخل المستشفى",
+                "locale": "ar",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "٩٧٫٩%",
+                "locale": "ar",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الوفيات المتوقعة داخل المستشفى بنسبة ٩٧٫٩%",
+            "locale": "ar",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "استخدم أسوأ القيم خلال أول 24 ساعة في وحدة العناية المركزة. ينطبق التنبؤ على مجموعات المرضى، وليس لاتخاذ قرارات فردية.",
+            "locale": "ar",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性生理评分（APS）",
+                "locale": "zh",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年龄",
+                "locale": "zh",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "慢性疾病",
+                "locale": "zh",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "预测住院死亡率",
+                "locale": "zh",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0.8%",
+                "locale": "zh",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "预测住院死亡率为 0.8%",
+            "locale": "zh",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "请使用 ICU 前 24 小时内的最差值。该预测适用于患者群体，而不用于决定个体处置。",
+            "locale": "zh",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性生理评分（APS）",
+                "locale": "zh",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年龄",
+                "locale": "zh",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "慢性疾病",
+                "locale": "zh",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "预测住院死亡率",
+                "locale": "zh",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25.6%",
+                "locale": "zh",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "预测住院死亡率为 25.6%",
+            "locale": "zh",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "请使用 ICU 前 24 小时内的最差值。该预测适用于患者群体，而不用于决定个体处置。",
+            "locale": "zh",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性生理评分（APS）",
+                "locale": "zh",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "A-a梯度 (FiO₂ ≥ 50%)",
+                "locale": "zh",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "年龄",
+                "locale": "zh",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "慢性疾病",
+                "locale": "zh",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 分",
+                "locale": "zh",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "预测住院死亡率",
+                "locale": "zh",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97.9%",
+                "locale": "zh",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "预测住院死亡率为 97.9%",
+            "locale": "zh",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "请使用 ICU 前 24 小时内的最差值。该预测适用于患者群体，而不用于决定个体处置。",
+            "locale": "zh",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性生理スコア（APS）",
+                "locale": "ja",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢",
+                "locale": "ja",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "慢性疾患",
+                "locale": "ja",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "予測入院死亡率",
+                "locale": "ja",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0.8%",
+                "locale": "ja",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "院内死亡予測率 0.8%",
+            "locale": "ja",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "ICU入室後最初の24時間の最悪値を使用してください。予測は患者群に対するものであり、個別の治療方針を決めるためのものではありません。",
+            "locale": "ja",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性生理スコア（APS）",
+                "locale": "ja",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢",
+                "locale": "ja",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "慢性疾患",
+                "locale": "ja",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "予測入院死亡率",
+                "locale": "ja",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25.6%",
+                "locale": "ja",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "院内死亡予測率 25.6%",
+            "locale": "ja",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "ICU入室後最初の24時間の最悪値を使用してください。予測は患者群に対するものであり、個別の治療方針を決めるためのものではありません。",
+            "locale": "ja",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "急性生理スコア（APS）",
+                "locale": "ja",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "A-a較差（FiO₂ ≥ 50%）",
+                "locale": "ja",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "年齢",
+                "locale": "ja",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "慢性疾患",
+                "locale": "ja",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 点",
+                "locale": "ja",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "予測入院死亡率",
+                "locale": "ja",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97.9%",
+                "locale": "ja",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "院内死亡予測率 97.9%",
+            "locale": "ja",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "ICU入室後最初の24時間の最悪値を使用してください。予測は患者群に対するものであり、個別の治療方針を決めるためのものではありません。",
+            "locale": "ja",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Pós-operatório eletivo de valva, fisiologia normal, 40 anos: 0 pontos, 0,8%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "तीव्र शारीरिकी स्कोर (APS)",
+                "locale": "hi",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "0 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु",
+                "locale": "hi",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "0 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "पुरानी बीमारी",
+                "locale": "hi",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "अनुमानित अस्पताल में मृत्यु दर",
+                "locale": "hi",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "0.8%",
+                "locale": "hi",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  0.8
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "0.8% की अनुमानित अस्पताल मृत्यु-दर",
+            "locale": "hi",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              0.8
+            ]
+          },
+          "note": {
+            "text": "ICU के पहले 24 घंटों के सबसे खराब मानों का उपयोग करें। यह पूर्वानुमान रोगी-समूहों के लिए है, व्यक्तिगत प्रबंधन तय करने के लिए नहीं।",
+            "locale": "hi",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Sepse clínica, 55 anos: APS 13 + idade 3 = 16; mortalidade 25,6%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "तीव्र शारीरिकी स्कोर (APS)",
+                "locale": "hi",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "13 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु",
+                "locale": "hi",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "3 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "पुरानी बीमारी",
+                "locale": "hi",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "0 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "अनुमानित अस्पताल में मृत्यु दर",
+                "locale": "hi",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "25.6%",
+                "locale": "hi",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  25.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25.6% की अनुमानित अस्पताल मृत्यु-दर",
+            "locale": "hi",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              25.6
+            ]
+          },
+          "note": {
+            "text": "ICU के पहले 24 घंटों के सबसे खराब मानों का उपयोग करें। यह पूर्वानुमान रोगी-समूहों के लिए है, व्यक्तिगत प्रबंधन तय करने के लिए नहीं।",
+            "locale": "hi",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Peritonite em cirurgia de urgência, 78 anos, doença crônica, IRA, FiO₂ 80% (A-a 450): 46 pontos, 97,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "तीव्र शारीरिकी स्कोर (APS)",
+                "locale": "hi",
+                "template": "documented-authored-fb2b1c33f34cc306398a"
+              },
+              "value": {
+                "text": "35 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "A-a ग्रेडिएंट (FiO₂ ≥ 50%)",
+                "locale": "hi",
+                "template": "documented-authored-97badeb20fb395307379"
+              },
+              "value": {
+                "text": "450 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-82276a69e74c31b9c71a",
+                "sourceNumbers": [
+                  450
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "आयु",
+                "locale": "hi",
+                "template": "documented-authored-e629255b89f41410e9d0"
+              },
+              "value": {
+                "text": "6 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "पुरानी बीमारी",
+                "locale": "hi",
+                "template": "documented-authored-f357cb4ab9657a79cddc"
+              },
+              "value": {
+                "text": "5 अंक",
+                "locale": "hi",
+                "template": "documented-authored-54894557006bb74cee04",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "अनुमानित अस्पताल में मृत्यु दर",
+                "locale": "hi",
+                "template": "documented-authored-4f597534727ef94babc5"
+              },
+              "value": {
+                "text": "97.9%",
+                "locale": "hi",
+                "template": "documented-authored-91c9ca27057cc1835590",
+                "sourceNumbers": [
+                  97.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "97.9% की अनुमानित अस्पताल मृत्यु-दर",
+            "locale": "hi",
+            "template": "documented-authored-68d020dab2e942a1baed",
+            "sourceNumbers": [
+              97.9
+            ]
+          },
+          "note": {
+            "text": "ICU के पहले 24 घंटों के सबसे खराब मानों का उपयोग करें। यह पूर्वानुमान रोगी-समूहों के लिए है, व्यक्तिगत प्रबंधन तय करने के लिए नहीं।",
+            "locale": "hi",
+            "template": "documented-authored-3a18e21d6f1f97b57a8e"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

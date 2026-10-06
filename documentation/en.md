@@ -222,3 +222,50 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Predicted in-hospital mortality of 0.8%
+
+| Result details | |
+| --- | --- |
+| Acute physiology score (APS) | 0 points |
+| Age | 0 points |
+| Chronic disease | 0 points |
+| Predicted in-hospital mortality | 0.8% |
+
+Use the worst values from the first 24 hours in the ICU. The prediction applies to patient groups, not to decide individual management.
+
+
+### 2
+
+Predicted in-hospital mortality of 25.6%
+
+| Result details | |
+| --- | --- |
+| Acute physiology score (APS) | 13 points |
+| Age | 3 points |
+| Chronic disease | 0 points |
+| Predicted in-hospital mortality | 25.6% |
+
+Use the worst values from the first 24 hours in the ICU. The prediction applies to patient groups, not to decide individual management.
+
+
+### 3
+
+Predicted in-hospital mortality of 97.9%
+
+| Result details | |
+| --- | --- |
+| Acute physiology score (APS) | 35 points |
+| A-a gradient (FiO₂ ≥ 50%) | 450 mmHg |
+| Age | 6 points |
+| Chronic disease | 5 points |
+| Predicted in-hospital mortality | 97.9% |
+
+Use the worst values from the first 24 hours in the ICU. The prediction applies to patient groups, not to decide individual management.
+

@@ -222,3 +222,50 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Mortalità ospedaliera prevista del 0,8%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punteggio di fisiologia acuta (APS) | 0 punti |
+| Età | 0 punti |
+| Malattia cronica | 0 punti |
+| Mortalità ospedaliera prevista | 0,8% |
+
+Usare i valori peggiori delle prime 24 ore in terapia intensiva. La previsione vale per gruppi di pazienti, non per decidere condotte individuali.
+
+
+### 2
+
+Mortalità ospedaliera prevista del 25,6%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punteggio di fisiologia acuta (APS) | 13 punti |
+| Età | 3 punti |
+| Malattia cronica | 0 punti |
+| Mortalità ospedaliera prevista | 25,6% |
+
+Usare i valori peggiori delle prime 24 ore in terapia intensiva. La previsione vale per gruppi di pazienti, non per decidere condotte individuali.
+
+
+### 3
+
+Mortalità ospedaliera prevista del 97,9%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punteggio di fisiologia acuta (APS) | 35 punti |
+| Gradiente A-a (FiO₂ ≥ 50%) | 450 mmHg |
+| Età | 6 punti |
+| Malattia cronica | 5 punti |
+| Mortalità ospedaliera prevista | 97,9% |
+
+Usare i valori peggiori delle prime 24 ore in terapia intensiva. La previsione vale per gruppi di pazienti, non per decidere condotte individuali.
+

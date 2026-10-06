@@ -222,3 +222,50 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Mortalidad hospitalaria prevista de 0,8%
+
+| Detalles del resultado | |
+| --- | --- |
+| Puntuación de fisiología aguda (APS) | 0 puntos |
+| Edad | 0 puntos |
+| Enfermedad crónica | 0 puntos |
+| Mortalidad hospitalaria prevista | 0,8% |
+
+Use los peores valores de las primeras 24 horas en la UCI. La predicción vale para grupos de pacientes, no para decidir conductas individuales.
+
+
+### 2
+
+Mortalidad hospitalaria prevista de 25,6%
+
+| Detalles del resultado | |
+| --- | --- |
+| Puntuación de fisiología aguda (APS) | 13 puntos |
+| Edad | 3 puntos |
+| Enfermedad crónica | 0 puntos |
+| Mortalidad hospitalaria prevista | 25,6% |
+
+Use los peores valores de las primeras 24 horas en la UCI. La predicción vale para grupos de pacientes, no para decidir conductas individuales.
+
+
+### 3
+
+Mortalidad hospitalaria prevista de 97,9%
+
+| Detalles del resultado | |
+| --- | --- |
+| Puntuación de fisiología aguda (APS) | 35 puntos |
+| Gradiente A-a (FiO₂ ≥ 50%) | 450 mmHg |
+| Edad | 6 puntos |
+| Enfermedad crónica | 5 puntos |
+| Mortalidad hospitalaria prevista | 97,9% |
+
+Use los peores valores de las primeras 24 horas en la UCI. La predicción vale para grupos de pacientes, no para decidir conductas individuales.
+

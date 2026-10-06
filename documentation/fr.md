@@ -222,3 +222,50 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Mortalité hospitalière prévue de 0,8%
+
+| Détails du résultat | |
+| --- | --- |
+| Score de physiologie aiguë (APS) | 0 points |
+| Âge | 0 points |
+| Maladie chronique | 0 points |
+| Mortalité hospitalière prévue | 0,8% |
+
+Utilisez les pires valeurs des 24 premières heures en soins intensifs. La prédiction s’applique à des groupes de patients, pas pour décider des conduites individuelles.
+
+
+### 2
+
+Mortalité hospitalière prévue de 25,6%
+
+| Détails du résultat | |
+| --- | --- |
+| Score de physiologie aiguë (APS) | 13 points |
+| Âge | 3 points |
+| Maladie chronique | 0 points |
+| Mortalité hospitalière prévue | 25,6% |
+
+Utilisez les pires valeurs des 24 premières heures en soins intensifs. La prédiction s’applique à des groupes de patients, pas pour décider des conduites individuelles.
+
+
+### 3
+
+Mortalité hospitalière prévue de 97,9%
+
+| Détails du résultat | |
+| --- | --- |
+| Score de physiologie aiguë (APS) | 35 points |
+| Gradient A-a (FiO₂ ≥ 50%) | 450 mmHg |
+| Âge | 6 points |
+| Maladie chronique | 5 points |
+| Mortalité hospitalière prévue | 97,9% |
+
+Utilisez les pires valeurs des 24 premières heures en soins intensifs. La prédiction s’applique à des groupes de patients, pas pour décider des conduites individuelles.
+

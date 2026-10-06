@@ -555,7 +555,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "APACHEII/Knaus 1985:12 variáveis; idade; doença crônica; oxigenação por Fi O 2; modelo logístico diagnóstico",
-    "implementationVersion": "apache-ii@native-2026-10-03+d73d3c4d2105",
+    "implementationVersion": "apache-ii@native-2026-10-05+5b7f24cbf12f",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3928249/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -972,7 +972,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "d73d3c4d21053c7938ff72deab86de5c9c251bd7b3ab8da56e0a70806e1a851d"
+      "implementationHash": "5b7f24cbf12fd4cc8957fd93b5778c1a15fbf5e4aee2b515e4e6f8661d075f76",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "apache-ii@native-2026-10-03+d73d3c4d2105",
+          "previousImplementationHash": "d73d3c4d21053c7938ff72deab86de5c9c251bd7b3ab8da56e0a70806e1a851d",
+          "implementationHash": "5b7f24cbf12fd4cc8957fd93b5778c1a15fbf5e4aee2b515e4e6f8661d075f76",
+          "scientificBodySha256": "d99bd2b6de76dbd84969ec6be5753dc08b859fc91a72d83a4d4f461fd13d3a53",
+          "metadataContractHash": "bf8643f5ce6a1ba8872721ee2526db02df0ab33a5788cc001472aa10dcea9e6e",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O APACHE II de 1985 foi relacionado à mortalidade hospitalar em 5815 admissões em UTI de 13 hospitais. A estratificação prognóstica descrita pelos autores combina o escore com uma descrição precisa da doença; o total isolado não reproduz essa informação diagnóstica. A janela de coleta, as exclusões e a aplicabilidade fora dessa população precisam de conferência no método integral.",
     "sourceLimitEvidence": {
@@ -991,20 +1019,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/apache-ii/calculator.js",
-    "bytes": 11783,
-    "sha256": "d73d3c4d21053c7938ff72deab86de5c9c251bd7b3ab8da56e0a70806e1a851d"
+    "bytes": 11988,
+    "sha256": "5b7f24cbf12fd4cc8957fd93b5778c1a15fbf5e4aee2b515e4e6f8661d075f76"
   },
-  "sourceToolSha256": "de53545b2ad858e49f92269e7c627ace1ca7c4d2dc32ebdd589f96b35c70cc10",
+  "sourceToolSha256": "f57575f085c7eda972d2463c97e5d9aac17158a721f28ab187231527eb8da504",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "dddade7e295432127319a04250e703132b2f343e52eb2deaea8d6479f5d1d165",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "dddade7e295432127319a04250e703132b2f343e52eb2deaea8d6479f5d1d165",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

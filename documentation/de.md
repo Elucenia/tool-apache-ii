@@ -222,3 +222,50 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Vorhergesagte Krankenhaussterblichkeit von 0,8%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Akutphysiologischer Score (APS) | 0 Punkte |
+| Alter | 0 Punkte |
+| Chronische Erkrankung | 0 Punkte |
+| Vorhergesagte Krankenhaussterblichkeit | 0,8% |
+
+Verwenden Sie die schlechtesten Werte der ersten 24 Stunden auf der Intensivstation. Die Vorhersage gilt für Patientengruppen, nicht für Entscheidungen im Einzelfall.
+
+
+### 2
+
+Vorhergesagte Krankenhaussterblichkeit von 25,6%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Akutphysiologischer Score (APS) | 13 Punkte |
+| Alter | 3 Punkte |
+| Chronische Erkrankung | 0 Punkte |
+| Vorhergesagte Krankenhaussterblichkeit | 25,6% |
+
+Verwenden Sie die schlechtesten Werte der ersten 24 Stunden auf der Intensivstation. Die Vorhersage gilt für Patientengruppen, nicht für Entscheidungen im Einzelfall.
+
+
+### 3
+
+Vorhergesagte Krankenhaussterblichkeit von 97,9%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Akutphysiologischer Score (APS) | 35 Punkte |
+| A-a-Gradient (FiO₂ ≥ 50%) | 450 mmHg |
+| Alter | 6 Punkte |
+| Chronische Erkrankung | 5 Punkte |
+| Vorhergesagte Krankenhaussterblichkeit | 97,9% |
+
+Verwenden Sie die schlechtesten Werte der ersten 24 Stunden auf der Intensivstation. Die Vorhersage gilt für Patientengruppen, nicht für Entscheidungen im Einzelfall.
+

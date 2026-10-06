@@ -222,3 +222,50 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Mortalidade hospitalar prevista de 0,8%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Escore fisiológico agudo (APS) | 0 pontos |
+| Idade | 0 pontos |
+| Doença crônica | 0 pontos |
+| Mortalidade hospitalar prevista | 0,8% |
+
+Use os piores valores das primeiras 24 horas de UTI. A previsão vale para grupos de pacientes, não para decidir condutas individuais.
+
+
+### 2
+
+Mortalidade hospitalar prevista de 25,6%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Escore fisiológico agudo (APS) | 13 pontos |
+| Idade | 3 pontos |
+| Doença crônica | 0 pontos |
+| Mortalidade hospitalar prevista | 25,6% |
+
+Use os piores valores das primeiras 24 horas de UTI. A previsão vale para grupos de pacientes, não para decidir condutas individuais.
+
+
+### 3
+
+Mortalidade hospitalar prevista de 97,9%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Escore fisiológico agudo (APS) | 35 pontos |
+| Gradiente A-a (FiO₂ ≥ 50%) | 450 mmHg |
+| Idade | 6 pontos |
+| Doença crônica | 5 pontos |
+| Mortalidade hospitalar prevista | 97,9% |
+
+Use os piores valores das primeiras 24 horas de UTI. A previsão vale para grupos de pacientes, não para decidir condutas individuais.
+
